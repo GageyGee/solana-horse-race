@@ -1,0 +1,13 @@
+[package]
+name = "horse_race"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+solana-program = "1.14.13"
+borsh = "0.9.3"
+thiserror = "1.0.38"
+spl-token = { version = "3.5.0", features = ["no-entrypoint"] }
+
+[lib]
+crate-type = ["cdylib", "lib"]
